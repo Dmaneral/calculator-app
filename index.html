@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <header>
+    <h1>calc</h1>
+    <div class="theme-toogle">
+      <h2>theme</h2>
+      <div class="toogle-switch">
+        <div class="theme-num">
+          <label>1</label>
+          <label>2</label>
+          <label>3</label>
+        </div>
+        <div class="tri-state-toggle">
+          <input class="button" type="radio" name="toggle" id="one-theme" />
+          <input class="button" type="radio" name="toggle" id="two-theme" />
+          <input class="button" type="radio" name="toggle" id="three-theme" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="output" id="oput-wrapper">
+      <h3 id="output">0</h3>
+      <h4 id="written-output">0</h4>
+    </div>
+    <div class="keys">
+      <button class="key square num similar" id="seven">7</button>
+      <button class="key square num similar" id="eight">8</button>
+      <button class="key square num similar" id="nine">9</button>
+      <button class="key square" id="del">DEL</button>
+      <button class="key square num similar" id="four">4</button>
+      <button class="key square num similar" id="five">5</button>
+      <button class="key square num similar" id="six">6</button>
+      <button class="key square similar" id="plus">+</button>
+      <button class="key square num similar" id="one">1</button>
+      <button class="key square num similar" id="two">2</button>
+      <button class="key square num similar" id="three">3</button>
+      <button class="key square similar" id="minus">-</button>
+      <button class="key square similar" id="dot">.</button>
+      <button class="key square num similar" id="zero">0</button>
+      <button class="key square similar" id="sub">/</button>
+      <button class="key square similar" id="multi">&times</button>
+      <button class="key" id="reset">RESET</button>
+      <button class="key" id="equal">=</button>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

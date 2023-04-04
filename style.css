@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --main-bg: hsl(222, 26%, 31%);
+    --toogle-bg: hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
+
+    --reset-bg: hsl(225, 21%, 49%);
+    --reset-shadow: hsl(224, 28%, 35%);
+    --equal-bg: hsl(6, 63%, 50%);
+    --equal-shadow: hsl(6, 70%, 34%);
+    --key-bg: hsl(30, 25%, 89%);
+    --key-shadow: hsl(28, 16%, 65%);
+
+    --text-general: hsl(0, 0%, 100%);
+    --text-key: hsl(221, 14%, 31%);
+    --text-key2: hsl(0, 0%, 100%);
+    --text: hsl(0, 0%, 100%);
+    --text-reset: hsl(0, 0%, 100%);
+    --text-num: hsl(221, 14%, 31%);
+
+    --theme-hover: hsla(6, 93%, 67%, 1);
+    --reset-hover: hsla(224, 51%, 76%, 1);
+    --key-hover: hsla(31, 100%, 100%, 1);
+    --equal-hover: hsla(6, 93%, 67%, 1);
+}
+
+/* ---- Themes ---- */
+
+.theme-1 {
+    --main-bg: hsl(222, 26%, 31%);
+    --toogle-bg: hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
+
+    --reset-bg: hsl(225, 21%, 49%);
+    --reset-shadow: hsl(224, 28%, 35%);
+    --equal-bg: hsl(6, 63%, 50%);
+    --equal-shadow: hsl(6, 70%, 34%);
+    --key-bg: hsl(30, 25%, 89%);
+    --key-shadow: hsl(28, 16%, 65%);
+
+    --text-general: hsl(0, 0%, 100%);
+    --text-key: hsl(221, 14%, 31%);
+    --text-key2: hsl(0, 0%, 100%);
+    --text: hsl(0, 0%, 100%);
+    --text-reset: hsl(0, 0%, 100%);
+    --text-num: hsl(221, 14%, 31%);
+
+    --theme-hover: hsla(6, 93%, 67%, 1);
+    --reset-hover: hsla(224, 51%, 76%, 1);
+    --key-hover: hsla(31, 100%, 100%, 1);
+    --equal-hover: hsla(6, 93%, 67%, 1);
+}
+
+.theme-2 {
+    --main-bg: hsl(0, 0%, 90%);
+    --toogle-bg: hsl(0, 5%, 81%);
+    --screen-bg: hsl(0, 0%, 93%);
+
+    --reset-bg: hsl(185, 42%, 37%);
+    --reset-shadow: hsl(185, 58%, 25%);
+    --equal-bg: hsl(25, 98%, 40%);
+    --equal-shadow: hsl(25, 99%, 27%);
+    --key-bg: hsl(45, 7%, 89%);
+    --key-shadow: hsl(35, 11%, 61%);
+
+    --text-general: hsl(60, 10%, 19%);
+    --text-key: hsl(60, 10%, 19%);
+    --text-reset: hsl(0, 0%, 100%);
+    --text-key2: hsl(0, 0%, 100%);
+    --text: hsl(0, 0%, 100%);
+    --text-num: hsl(60, 10%, 19%);
+
+    --theme-hover: hsla(25, 100%, 61%, 1);
+    --reset-hover: hsla(184, 40%, 56%, 1);
+    --key-hover: hsla(0, 0%, 100%, 1);
+    --equal-hover: hsla(25, 100%, 61%, 1);
+}
+
+.theme-3 {
+    --main-bg: hsl(268, 75%, 9%);
+    --toogle-bg: hsl(268, 71%, 12%);
+    --screen-bg: hsl(268, 71%, 12%);
+
+    --reset-bg: hsl(281, 89%, 26%);
+    --reset-shadow: hsl(285, 91%, 52%);
+    --equal-bg: hsl(176, 100%, 44%);
+    --equal-shadow: hsl(177, 92%, 70%);
+    --key-bg: hsl(268, 47%, 21%);
+    --key-shadow: hsl(290, 70%, 36%);
+
+    --text-general: hsl(52, 100%, 62%);
+    --text-key: hsl(0, 0%, 100%);
+    --text-key2: hsl(198, 20%, 13%);
+    --text: hsl(52, 100%, 62%);
+    --text-reset: hsl(0, 0%, 100%);
+    --text-num: hsl(52, 100%, 62%);
+
+    --theme-hover: hsla(176, 100%, 79%, 1);
+    --reset-hover: hsla(280, 56%, 44%, 1);
+    --key-hover: hsla(268, 54%, 44%, 1);
+    --equal-hover: hsla(176, 100%, 79%, 1);
+}
+
+/* ---- Themes ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sasimilarns-serif;
+}
+
+body {
+    background-color: var(--main-bg);
+    display: flex;
+    max-height: 100vh;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px 24px 0 24px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.533333px;
+    color: var(--text-general);
+    
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--text-general);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.theme-toogle {
+    display: flex;
+    align-items: flex-end;
+    gap: 2.6rem;
+}
+
+.theme-num {
+    display: flex;
+    justify-content: space-around;
+}
+
+.toogle-switch {
+    width: fit-content;
+    transition: all .5s;
+}
+
+input {
+    height: 15px;
+    width: 15px;
+    appearance: none;
+    background-color: var(--equal-bg);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+input:hover {
+   cursor: pointer;
+}
+
+.tri-state-toggle {
+    display: flex;
+    justify-content: center;
+    background-color: var(--toogle-bg);
+    border-radius: 50px;
+    padding: 4px;
+    gap: 7px;
+    margin-top: 7px;
+    transition: all .5s;
+}
+
+#one-theme {
+    opacity: 1;
+}
+
+label {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 11px;
+    text-align: center;
+    color: var(--text-general);
+}
+
+main {
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.output {
+    width: 100%;
+    background-color: var(--screen-bg);
+    border-radius: 10px;
+    padding: 23px 24px 18px 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: all 0.5s;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 5.5rem;
+    /* line-height: 35px; */
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: var(--text-general);
+    overflow: hidden;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    /* line-height: 35px; */
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: var(--text-general);
+    overflow: hidden;
+    display: none;
+    transition: all .5s;
+}
+/* 
+h3 {
+    font-size: 2rem;
+} */
+
+.keys {
+    width: 100%;
+    background-color: var(--toogle-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 24px;
+    gap: 13px;
+    margin-top: 24px;
+    border-radius: 10px;
+}
+
+.num, #dot, #sub, #multi, #minus, #plus {
+    background: var(--key-bg);
+    box-shadow: inset 0px -4px 0px var(--key-shadow);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.key{
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.533333px;
+    color: var(--text-key);
+    border: none;
+}
+
+#del, #reset {
+    background: var(--reset-bg);
+    box-shadow: inset 0px -4px 0px var(--reset-shadow);
+    border-radius: 5px;
+
+    font-size: 20px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: var(--text-reset);
+    padding: 15px;
+}
+
+#reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    background: var(--equal-bg);
+    box-shadow: inset 0px -4px 0px var(--equal-shadow);
+    border-radius: 5px;
+
+    font-size: 20px;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: var(--text-key2);
+}
+
+
+.similar {
+    color: var(--text-num);
+}
+  
+@media screen and (min-width: 1024px) {
+    body {
+        width: 35vw;
+        margin: auto;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .key {
+        transition: all 0.3s;
+    }
+
+    .key:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+
+    input:hover {
+        background-color: var(--theme-hover);
+    }
+
+    #del:hover, #reset:hover {
+        background-color: var(--reset-hover);
+    }
+    
+    #equal:hover {
+        background-color: var(--equal-hover);
+    }
+
+    .similar:hover {
+        background-color: var(--key-hover);
+    }
+}
