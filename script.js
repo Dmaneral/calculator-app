@@ -235,8 +235,14 @@ function resetFunction() {
 
 function resultFun() {
     if(last_output.innerHTML[last_output.innerHTML.length - 1] != ".") {
-        output.innerHTML = parseFloat(eval(last_output.innerHTML)).toFixed(4);
-        last_output.innerHTML = eval(last_output.innerHTML);
+        if(eval(last_output.innerHTML).toString().includes(".")) {
+            output.innerHTML = parseFloat(eval(last_output.innerHTML)).toFixed(4);
+            last_output.innerHTML = eval(last_output.innerHTML);
+        } else {
+            output.innerHTML = parseFloat(eval(last_output.innerHTML));
+            last_output.innerHTML = eval(last_output.innerHTML);
+        }
+        
         last_output.style.display = "none";
         output.style.fontSize = "5.5rem";
     }
